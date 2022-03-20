@@ -262,7 +262,7 @@ def construct_company_dcf(company):
     url = get_macrotrends_correct_url(company)
     # url = "TEST URL"
     number_of_columns = 23
-    column_name_placeholder = [(i * '.') for i in range(1,number_of_columns - 2 + 1)]
+    column_name_placeholder = [(i * ' ') for i in range(1,number_of_columns - 2 + 1)]
     list_of_columns = ['Stock', company] + column_name_placeholder
 
     df_main = pd.DataFrame(columns = list_of_columns)
